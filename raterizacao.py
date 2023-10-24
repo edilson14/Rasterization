@@ -88,7 +88,7 @@ def rasteriza_poligno(imagem):
                 else:
                     count += 1
 
-            if 0 < count and count % 2 == 1:
+            if count > 0 and count % 2 == 1:
                 ponto_aux.append([y, x])
         if len(ponto_aux) != 0 and count % 2 == 0:
             pontos_internos.append(ponto_aux)
